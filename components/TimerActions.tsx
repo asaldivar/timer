@@ -25,7 +25,7 @@ export const TimerActions = () => {
         variant="ghost"
         className="text-lg font-normal"
         onClick={handleAddMinute}
-        disabled={seconds > Time.MaxSeconds - 60}
+        disabled={seconds >= Time.MaxSeconds}
       >
         +1:00
       </Button>

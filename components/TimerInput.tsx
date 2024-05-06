@@ -57,7 +57,7 @@ export const TimerInput: React.FC<IDialogTimerInputProps> = ({ className }) => {
   return (
     <div className={cn("flex place-items-center gap-1", className)}>
       <Input
-        className="text-5xl	w-min p-0 text-center border-0 focus-visible:ring-transparent"
+        className="text-5xl	p-0 text-center border-0 focus-visible:ring-transparent w-20 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
         type="number"
         id="minutes"
         name="minutes"
@@ -69,7 +69,7 @@ export const TimerInput: React.FC<IDialogTimerInputProps> = ({ className }) => {
       />
       <span className="align-middle text-2xl">:</span>
       <Input
-        className="text-5xl	w-min p-0 text-center border-0 focus-visible:ring-transparent"
+        className="text-5xl	w-20 p-0 text-center border-0 focus-visible:ring-transparent [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
         type="number"
         id="seconds"
         name="seconds"
